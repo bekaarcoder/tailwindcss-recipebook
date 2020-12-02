@@ -8,7 +8,7 @@
 </head>
 <body class="text-gray-600 font-roboto">
 
-  <div><!-- content wrapper-->
+  <div class="grid md:grid-cols-5"><!-- content wrapper-->
     <div>
       <nav>
         <div>
@@ -34,7 +34,7 @@
       </nav>
     </div><!--end nav-->
 
-    <main class="px-12 py-6">
+    <main class="px-12 py-6 bg-gray-100 md:col-span-4">
       <div class="flex md:justify-end justify-center">
         <a href="#" class="text-yellow-500">Log In</a>
         <a href="#" class="text-yellow-500 ml-2">Sign Up</a>
@@ -42,19 +42,44 @@
 
       <header class="py-6">
         <h2 class="text-gray-800 text-6xl py-4 font-semibold">Recipes</h2>
-        <h3 class="text-3xl ml-28">For Foodies</h3>
+        <h3 class="text-2xl ml-28">For Foodies</h3>
       </header>
 
       <div>
         <h4 class="font-bold border-b">Latest Recipes</h4>
 
-        <div class="mt-8">
+        <div class="mt-8 grid md:grid-cols-3 lg:gap-20 gap-8">
           <!--recipe cards-->
-          <div>
-            <img src="image/grilled_cheese_sandwich.png" alt="">
-            <div>
-              <span>Grilled Cheese Sandwich</span>
-              <span>Recipe by Stan</span>
+          <div class="card">
+            <img src="image/grilled_cheese_sandwich.png" alt="cheese-sandwich" class="w-full h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Grilled Cheese Sandwich</span>
+              <span class="block text-gray-500 text-sm">Recipe by Stan</span>
+            </div>
+            <div class="badge">
+              <span>25 mins</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="image/fried_chicken.png" alt="fried-chicken" class="w-full h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Grilled Cheese Sandwich</span>
+              <span class="block text-gray-500 text-sm">Recipe by Stan</span>
+            </div>
+            <div class="badge">
+              <span>50 mins</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="image/monterey_chicken.png" alt="monterey-chicken" class="w-full h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Grilled Cheese Sandwich</span>
+              <span class="block text-gray-500 text-sm">Recipe by Stan</span>
+            </div>
+            <div class="badge">
+              <span>45 mins</span>
             </div>
           </div>
         </div>
